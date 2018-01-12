@@ -1,0 +1,80 @@
+html {
+	background: linear-gradient(green, white);
+	height: 100%;
+	font-family: sans-serif;
+}
+
+.nav {
+	background-color: #333;
+	width: 200px;
+	height: 100%;
+	position: fixed;
+}
+
+.nav img {
+	display: block;
+	width: 80%;
+	margin: auto;
+	padding: 5%;
+}
+
+.button {
+	display: block;
+	margin-top: 100%;
+	padding: 5%;
+	background-color: #3B5998;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li a {
+	display: block;
+	color: white;
+	padding: 8px 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: #111;
+}
+
+.active {
+	background-color: #4CAF50;
+}
+
+.content {
+	margin-left: 11%;
+	padding: 1px 16px;
+	height: auto;
+	background-color: #f1f1f1;
+}
+
+.content img {
+	margin-top: 50px;
+	height: 400px;
+	width: 600px;
+}
+
+.slideshow {
+	position: relative;
+	overflow: hidden;
+}
+
+.images {
+	background: url(Slide_Image1.jpg);
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 300%;
+	animation: slideshow 10s linear infinite;
+}
+
+@keyframes slideshow {
+	0%   {left: 0;}
+	100%  {left: -200;}	
+}
