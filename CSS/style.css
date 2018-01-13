@@ -7,7 +7,7 @@ html {
 
 .nav {
 	background-color: #333;
-	width: 200px;
+	width: 10%;
 	height: 100%;
 	position: fixed;
 }
@@ -48,6 +48,7 @@ li a:hover {
 }
 
 .content {
+	width: auto;
 	margin-left: 11%;
 	padding: 1px 16px;
 	height: auto;
