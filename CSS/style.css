@@ -1,5 +1,6 @@
 html {
 	background: linear-gradient(green, white);
+	background-repeat: no-repeat;
 	height: 100%;
 	font-family: sans-serif;
 }
@@ -54,27 +55,16 @@ li a:hover {
 }
 
 .content img {
+	display: inline-block;
 	margin-top: 50px;
 	height: 400px;
 	width: 600px;
 }
 
-.slideshow {
-	position: relative;
-	overflow: hidden;
-}
-
-.images {
-	background: url(Slide_Image1.jpg);
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 300%;
-	animation: slideshow 10s linear infinite;
-}
-
-@keyframes slideshow {
-	0%   {left: 0;}
-	100%  {left: -200;}	
+#marquee-container {
+ width: auto; /* or whatever you want */
+ margin: auto; /* centers it */
+ margin-left: 11%;
+ overflow: hidden;
+ white-space: nowrap;
 }
